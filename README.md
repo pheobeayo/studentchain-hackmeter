@@ -1,4 +1,4 @@
-For the readme 
+
 
 Project Name: Studentchain
 
@@ -43,5 +43,5 @@ https://www.canva.com/design/DAGEnxLo7Qc/PKoHoxS-S2k5jkzjubVOLQ/view?utm_content
 
 Prototype
 https://www.figma.com/file/PUblN4MOdsqA4I7fg3ardt/StudentChain?type=design&node-id=1516-486&mode=design 
-Deployed Contract Address on Celonet: 
-https://gist.github.com/nafkem/a502b3a8f83a1a655dea318944179035\
+Deployed Contract Address on Lisk Sepolia Testnet : 
+https://gist.github.com/nafkem/b62345d21e858574f0dad4517e79b812
