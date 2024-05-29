@@ -3,7 +3,7 @@ import { useWeb3ModalAccount } from "@web3modal/ethers/react";
 import { readOnlyProvider } from "../utils/constants/providers";
 import { getStudentChainContract } from "../utils/constants/contracts";
 
-const useGetProposalById = (id) => {
+const useGetProposalById = () => {
     const [reg, setReg] = useState({
         loading: true,
         data: [],
@@ -15,7 +15,7 @@ const useGetProposalById = (id) => {
         const contract = getStudentChainContract(readOnlyProvider);
 
         contract
-            .getApprovedProposals(id)
+            .getPendingProposals()
             .then((res) => {
                 console.log(res);
                 setReg({
@@ -27,7 +27,7 @@ const useGetProposalById = (id) => {
                 console.error("error fetching registration status: ", err);
                 setReg([]);
             });
-    }, [address, id]);
+    }, [address]);
 
     return reg;
 }

@@ -11,7 +11,6 @@ const useGetProposals = () => {
     const { address } = useWeb3ModalAccount()
 
 
-
     useEffect(() => {
         const contract = getStudentChainContract(readOnlyProvider);
 

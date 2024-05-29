@@ -1,5 +1,5 @@
 import How from "../../components/how/How";
-// import Proposal from "../../components/proposal/Proposal";
+import Proposal from "../../components/proposal/Proposal";
 import About from "../../components/about/About";
 import Footer from "../../components/footer/Footer";
 import Hero from "../../components/hero/Hero";
@@ -11,7 +11,7 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <Hero />
         <How />
-        {/* <Proposal /> */}
+        <Proposal />  
         <About />
          <Footer />
       
