@@ -1,14 +1,14 @@
 import  { useState } from "react";
 import Footer from "../../components/footer/Footer";
 import axios from 'axios';
-import useRegStudent from "../../hooks/useRegStudent";
+import useCreateCommunity from "../../hooks/useCreateCommunity";
 
 const CreateCommunity = () => {
   const [checked, setChecked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null); // State to store the selected file
 
-  const registar = useRegStudent();
+  const registar = useCreateCommunity();
   const onChange = () => {
     setChecked(!checked);
   };
@@ -70,9 +70,9 @@ const CreateCommunity = () => {
                 </label>
                 <input
                   className="bg-white border-[#331000] border-2 rounded w-full py-2 px-3 text-[#331000] leading-tight focus:outline-none focus:shadow-outline"
-                  id="emailaddress"
-                  type="email"
-                  placeholder="Add your email address"
+                  id="name"
+                  type="text"
+                  placeholder="name of the community"
                   required
                 />
               </div>
