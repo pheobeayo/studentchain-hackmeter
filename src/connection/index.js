@@ -1,13 +1,13 @@
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 
 
-export const SUPPORTED_CHAIN = 4202;
+export const SUPPORTED_CHAIN = 82;
 
-const lisk = {
+const meter = {
     chainId: SUPPORTED_CHAIN,
-    name: "Lisk Sepolia Testnet",
-    currency: "ETH",
-    explorerUrl: "https://sepolia-blockscout.lisk.com/",
+    name: "Meter Testnet",
+    currency: "MTR",
+    explorerUrl: "https://scan-warringstakes.meter.io/",
     rpcUrl: process.env.REACT_APP_RPC_URL,
 };
 
@@ -21,7 +21,7 @@ const metadata = {
 export const configureWeb3Modal = () =>
     createWeb3Modal({
         ethersConfig: defaultConfig({ metadata }),
-        chains: [lisk],
+        chains: [meter],
         projectId: process.env.REACT_APP_PROJECTID,
         enableAnalytics: false, // Optional - defaults to your Cloud configuration
         themeVariables: {
