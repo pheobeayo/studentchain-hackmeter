@@ -1,7 +1,7 @@
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 
 
-export const SUPPORTED_CHAIN = 82;
+export const SUPPORTED_CHAIN = 83;
 
 const meter = {
     chainId: SUPPORTED_CHAIN,
