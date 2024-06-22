@@ -14,7 +14,7 @@ const FundingSuccessPage = () => {
   }
   return (
     <>
-      <div className="h-screen flex justify-center items-center bg-[#FF5100]">
+      <div className="h-screen flex justify-center items-center bg-gray-400">
         <div className="absolute z-10 w-[70%] bg-white rounded-xl md:rounded-2xl h-[40vh] md:h-[50vh] md:w-[40%] border shadow-xl "></div>
         <div className="z-20 md:w-[30%] mt-12 md:mt-0">
           <div className="flex flex-col">

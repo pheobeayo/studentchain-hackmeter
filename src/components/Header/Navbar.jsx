@@ -17,23 +17,23 @@ const Navbar = () => {
         <div className="flex gap-2 justify-center items-center px-10 pt-8 pr-10">
           <img src={logo} alt="logo" />
 
-          <ul className="flex m-auto gap-16 ">
-            <li className="hidden md:inline-block text-[#331000] font-serif">
+          <ul className="flex m-auto gap-10 ">
+            <li className="hidden md:inline-block text-[#331000] font-serif text-base">
               <Link to="/">Home</Link>
             </li>
-            <li className="hidden md:inline-block text-[#331000] font-serif">
+            <li className="hidden md:inline-block text-[#331000] font-serif text-base">
               <Link to="/fund-modal/:id">Fund</Link>
             </li>
-            <li className="hidden md:inline-block  text-[#331000] font-serif">
+            <li className="hidden md:inline-block  text-[#331000] font-serif text-base">
               <Link to="/create-proposal">Submit proposal</Link>
             </li>
-            <li className="hidden md:inline-block  text-[#331000] font-serif">
+            <li className="hidden md:inline-block  text-[#331000] font-serif text-base">
               <Link to="/fund/:id">Check proposal</Link>
             </li>
-            <li className="hidden md:inline-block  text-[#331000] font-serif">
+            <li className="hidden md:inline-block  text-[#331000] font-serif text-base">
               <Link to="/about-us">About us</Link>
             </li>
-            <li  className="hidden md:inline-block  text-[#331000] font-serif">
+            <li  className="hidden md:inline-block  text-[#331000] font-serif text-base ">
              <Link to='/create-community'> Create Community </Link>
             </li>
           </ul>

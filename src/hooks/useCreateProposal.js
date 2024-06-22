@@ -27,7 +27,7 @@ const useCreateProposal = () => {
                 toast.success("proposal created!");
 
                 // Redirect to the student-details
-                return navigate("/student-details");
+                return navigate("/");
             }
 
             toast.error("proposal creation failed!");

@@ -28,7 +28,7 @@ const Proposal = () => {
             <h3>Loading...</h3>
           ) : proposal.length !== 0 ? (
             proposal.map((item, index) => (
-              <div key={index} className="content-card mb-5  hover:skew-x-12  
+              <div key={index} className="content-card mb-5  hover:skew-x-2  
               duration-150 ease-in-out">
                 <img
                   src={`https://green-rational-prawn-874.mypinata.cloud/ipfs/${item[6]}`}
