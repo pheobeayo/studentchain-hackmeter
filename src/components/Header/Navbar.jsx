@@ -16,28 +16,26 @@ const Navbar = () => {
       <div className="fixed top-0 right-0 left-0 bg-gradient z-40 bg-white p-2 border-y ">
         <div className="flex gap-2 justify-center items-center px-10 pt-8 pr-10">
           <img src={logo} alt="logo" />
-
-          <ul className="flex m-auto gap-10 ">
-            <li className="hidden md:inline-block text-[#331000] font-serif text-base">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="hidden md:inline-block text-[#331000] font-serif text-base">
-              <Link to="/fund-modal/:id">Fund</Link>
-            </li>
-            <li className="hidden md:inline-block  text-[#331000] font-serif text-base">
-              <Link to="/create-proposal">Submit proposal</Link>
-            </li>
-            <li className="hidden md:inline-block  text-[#331000] font-serif text-base">
-              <Link to="/fund/:id">Check proposal</Link>
-            </li>
-            <li className="hidden md:inline-block  text-[#331000] font-serif text-base">
-              <Link to="/about-us">About us</Link>
-            </li>
-            <li  className="hidden md:inline-block  text-[#331000] font-serif text-base ">
-             <Link to='/create-community'> Create Community </Link>
-            </li>
-          </ul>
-
+          <div className="flex m-auto gap-16 ">
+            <NavLink to='/' className=" md:inNavLinkne-block text-[#331000] font-serif hover:text-[#FF5100] cursor-grab ">
+              Home
+            </NavLink>
+            <NavLink to='/fund-modal/:id' className=" md:inNavLinkne-block text-[#331000] font-serif hover:text-[#FF5100] cursor-grab ">
+              Fund
+            </NavLink>
+            <NavLink to='/create-proposal' className=" md:inNavLinkne-block text-[#331000] font-serif hover:text-[#FF5100] cursor-grab ">
+              Submit proposal
+            </NavLink>
+            <NavLink to='/fund/:id' className=" md:inNavLinkne-block text-[#331000] font-serif hover:text-[#FF5100] cursor-grab ">
+              Check proposal
+            </NavLink>
+            <NavLink to='/about-us' className=" md:inNavLinkne-block  text-[#331000] font-serif hover:text-[#FF5100] cursor-grab ">
+              About us
+            </NavLink>
+            <NavLink to='/create-community' className=" md:inNavLinkne-block  text-[#331000] font-serif hover:text-[#FF5100] cursor-grab ">
+              Create Community
+            </NavLink>
+          </div>
           <w3m-button />
 
           <div className="md:hidden">

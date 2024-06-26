@@ -5,17 +5,17 @@ export const SUPPORTED_CHAIN = 83;
 
 const meter = {
     chainId: SUPPORTED_CHAIN,
-    name: "Meter Testnet",
+    name: "Meter",
     currency: "MTR",
-    explorerUrl: "https://scan-warringstakes.meter.io/",
+    explorerUrl: "https://explorer-warringstakes.meter.io",
     rpcUrl: process.env.REACT_APP_RPC_URL,
 };
 
 const metadata = {
     name: "StudentChain",
     description: "A blockchain app for supporting students",
-    url: "https://studentchain.vercel.app/", // origin must match your domain & subdomain
-    icons: ["https://studentchain.vercel.app/"],
+    url: "https://studentchain-hackmeter.vercel.app/", // origin must match your domain & subdomain
+    icons: ["https://studentchain-hackmeter.vercel.app/"],
 };
 
 export const configureWeb3Modal = () =>
